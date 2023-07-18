@@ -1,0 +1,15 @@
+import Image from 'next/image'
+import classes from './hero.module.css'
+function Hero() {
+    return (
+        <section className={classes.hero}>
+            <div className={classes.image}>
+                <Image src="/images/site/darshil.png" alt="An image showing Darshil" width={300} height={300}/>
+            </div>
+            <h1>Hi, I'm Darshil</h1>
+            <p>I blog about my quotes which i have already posted on my instagram page</p>
+        </section>
+    )
+}
+
+export default Hero
