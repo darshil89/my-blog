@@ -8,6 +8,7 @@ class MyDocument extends Document {
         <body className="bg-gray-100 text-gray-800">
           <Main />
           <NextScript />
+          <div id="notification"></div>
         </body>
       </Html>
     );
