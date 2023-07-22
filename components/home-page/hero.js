@@ -7,7 +7,7 @@ function Hero() {
                 <Image src="/images/site/darshil.png" alt="An image showing Darshil" width={300} height={300}/>
             </div>
             <h1>Hi, I'm Darshil</h1>
-            <p>I blog about my quotes which i have already posted on my instagram page</p>
+            <p>I post about programming and web development.</p>
         </section>
     )
 }
