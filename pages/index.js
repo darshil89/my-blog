@@ -2,7 +2,7 @@ import { Fragment } from "react";
 import Hero from "../components/home-page/hero";
 import FeaturedPosts from "../components/home-page/featured-posts";
 import { getFeaturedPosts } from "../lib/post-util";
-
+import Head from "next/head";
 const DUMMY_POSTS = [
   {
     slug: "getting-started-with-nextjs",
@@ -41,6 +41,13 @@ const DUMMY_POSTS = [
 function Homepage(props) {
   return (
     <Fragment>
+      <Head>
+        <title>Darshil's Blog</title>
+        <meta
+          name="description"
+          content="I post about programming and web development."
+        />
+      </Head>
       <Hero />
       <FeaturedPosts posts={props.posts} />
     </Fragment>
@@ -54,7 +61,6 @@ export function getStaticProps() {
     props: {
       posts: featuredPosts,
     },
-    
   };
 }
 
